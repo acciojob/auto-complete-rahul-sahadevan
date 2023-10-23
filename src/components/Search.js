@@ -18,7 +18,7 @@ function Search(){
     return (
         <div>
             <input onChange={(e)=> setSearch(e.target.value)} type='text' placeholder='Search'></input>
-            <ol>
+            <ul>
                 {
                     list.map((fruit) =>{
                         return(
@@ -26,7 +26,7 @@ function Search(){
                         )
                     })
                 }
-            </ol>
+            </ul>
         </div>
     )
 }
